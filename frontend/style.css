@@ -1,0 +1,111 @@
+* {
+    margin:0; 
+    padding:0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+body > div.first,
+    div.most-inner {
+        border-left: 10px solid #000;
+    }
+
+div.first {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+div.first +div {
+    border-left: 10px solid blue;
+}
+
+div.most-inner {
+    border-radius: 50%;
+}
+
+div.most-inner:hover {
+    background-color: palevioletred;
+}
+
+div.most-inner::before {
+    content: "A";
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom:0;
+    width:100px;
+    height: 100px;
+    background-color: green;
+}
+
+div.most-inner::after {
+    content: "Z";
+}
+
+body > div>div {
+    height: 90vh;
+    width: 90vh;
+    background-color:aqua;
+}
+
+body > div {
+    height: 100vh;
+    width: 100vh;
+    background-color:yellow;
+}
+
+
+body > div>div>div {
+    height: 80vh;
+    width: 80vh;
+    background-color:red;
+}
+
+
+body > div>div>div>div {
+    height: 70vh;
+    width: 70vh;
+    background-color:brown;
+}
+
+body > div>div>div>div>div  {
+    height: 60vh;
+    width: 60vh;
+    background-color:teal;
+}
+
+body > div>div>div>div>div>div {
+    height: 50vh;
+    width: 50vh;
+    background-color:orange;
+}
+
+body > div>div>div>div>div>div>div {
+    height: 40vh;
+    width: 40vh;
+    background-color:aquamarine;
+}
+
+
+body > div>div>div>div>div>div>div>div {
+    height: 30vh;
+    width: 30vh;
+    background-color:dimgrey;
+}
+
+
+body > div>div>div>div>div>div>div>div>div {
+    height: 20vh;
+    width: 20vh;
+    background-color:deepskyblue;
+}
+
+
+body > div>div>div>div>div>div>div>div>div>div {
+    height: 10vh;
+    width: 10vh;
+    background-color:limegreen;
+}
+
