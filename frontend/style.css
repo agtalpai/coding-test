@@ -1,6 +1,42 @@
 * {
     margin:0; 
     padding:0;
+    border:0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: burlywood;
+    z-index: 100;
+}
+
+#logo, header nav {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+}
+
+header nav a {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+header nav button {
+    position: absolute;
+    width:60px;
+    height: 60px;
+    right: 0;
+    top: 0;
+    background-color: darkblue;
 }
 
 div {
@@ -43,6 +79,10 @@ div.most-inner::before {
 div.most-inner::after {
     content: "Z";
 }
+
+
+/* HF: középre rendezni a diveket */
+
 
 body > div>div {
     height: 90vh;
