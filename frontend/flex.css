@@ -6,6 +6,10 @@ section.order {
     display: flex;
 }
 
+section.no-wrap {
+    flex-wrap: nowrap;
+}
+
 section.order.row-reverse {
     flex-direction: row-reverse;
 }
