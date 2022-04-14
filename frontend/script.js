@@ -34,7 +34,7 @@ async function loadEvent() {
         // 0
         console.log(index);
         // countriesSection.insertAdjacentHTML("beforeend", countriesJSON[index].name.common);
-        countriesSection.insertAdjacentHTML("beforeend", countryComponent(countriesJSON[index].name.common));
+        countriesSection.insertAdjacentHTML("beforeend", countryComponent(countriesJSON[index].name.common) + countryComponent(countriesJSON[index].name.official));
     }
 
 }
