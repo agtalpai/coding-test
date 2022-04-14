@@ -1,3 +1,7 @@
+section {
+    flex-wrap: wrap;
+}
+
 section.order {
     display: flex;
 }
