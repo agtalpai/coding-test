@@ -25,7 +25,7 @@ async function loadEvent() {
 
     function countryComponent(countryName) {
         return `
-        <h2>${countryName}</h2>
+        <div class="country"><h2>${countryName}</h2></div   >
         `
     }
 
@@ -34,7 +34,7 @@ async function loadEvent() {
         // 0
         console.log(index);
         // countriesSection.insertAdjacentHTML("beforeend", countriesJSON[index].name.common);
-        countriesSection.insertAdjacentHTML("beforeend", countryComponent(countriesJSON[index].name.common) + countryComponent(countriesJSON[index].name.official));
+        countriesSection.insertAdjacentHTML("beforeend", countryComponent(countriesJSON[index].name.common) /*+ countryComponent(countriesJSON[index].name.official)*/);
     }
 
 }

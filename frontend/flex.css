@@ -1,0 +1,101 @@
+section.order {
+    display: flex;
+}
+
+section.order.row-reverse {
+    flex-direction: row-reverse;
+}
+
+section.grow {
+    display: flex;
+}
+
+section.basis {
+    display: flex;
+}
+
+
+.country {
+    padding: 40px;
+    border: 1px solid #ccc;
+}
+
+
+.first {
+    margin:15px;
+    background-color:aqua;
+
+}
+
+.second {
+    margin:15px;
+    background-color:bisque;
+
+}
+
+.third {
+    margin:15px;
+    background-color: beige;
+
+}
+
+.fourth {
+    margin:15px;
+    background-color: yellow;
+
+}
+.fifth {
+    margin:15px;
+    background-color: aliceblue;
+
+}
+
+
+section.order>.first {
+    order:6;
+}
+
+section.order>.second {
+    order:2;
+}
+
+section.order>.third {
+    order:-1;
+}
+
+section.order>.fourth {
+    order:4;
+}
+
+section.order>.fifth {
+    order:5;
+}
+
+section.grow>.third {
+    flex-grow:2;
+}
+
+section.basis>.country.first {
+    flex-basis: 10%;
+    padding:10px;
+}
+
+section.basis>.country.second {
+    flex-basis: 20%;
+    padding:10px;
+}
+
+section.basis>.country.third {
+    flex-basis: 30%;
+    padding:10px;
+}
+
+section.basis>.country.fourth {
+    flex-basis: 40%;
+    padding:10px;
+}
+
+section.basis>.country.fifth {
+    flex-basis: 50%;
+    padding:10px;
+}
